@@ -8,6 +8,6 @@ $ docker build -t tfk-form-skoleskyss .
 ```
 
 # Run
-```sh`
+```sh
 $ docker run -d -P tfk-form-skoleskyss
-``
+```
