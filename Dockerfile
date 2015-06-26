@@ -12,10 +12,10 @@ MAINTAINER Geir Gåsodden
 #### Begin setup ####
 
 # Clone the repo
-RUN git clone git@github.com:telemark/tfk-form-skoleskyss.git
+RUN git clone https://github.com/telemark/tfk-form-skoleskyss.git skoleskyss
 
-# cd into directory
-RUN cd tfk-form-skoleskyss
+# Change working directory
+WORKDIR "/skoleskyss"
 
 # Run the setup script
 RUN npm run setup
@@ -24,7 +24,4 @@ RUN npm run setup
 EXPOSE 3000
 
 # Startup
-CMD node start
-
-# Entrypoint
-ENTRYPOINT tfk-form-skoleskyss
+ENTRYPOINT node standalone.js
