@@ -16,5 +16,11 @@ $ docker build -t tfk-form-skoleskyss .
 
 # Run
 ```sh
-$ docker run -d -p 80:3000 tfk-form-skoleskyss
+$ docker run -d -p 80:3000 --name skoleskyss tfk-form-skoleskyss
+```
+
+or if you use the pre-build version
+
+```sh
+$ docker run -d -p 80:3000 --name skoleskyss zrrrzzt/tfk-form-skoleskyss
 ```
